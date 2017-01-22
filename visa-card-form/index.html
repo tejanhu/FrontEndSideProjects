@@ -29,6 +29,8 @@
 		font-weight: normal;
 		font-size:11px;
 		float:left;
+		position: relative;
+		top: -15px;
 	}
 	.creditCardField{
 		margin-top: 6px;
@@ -48,6 +50,8 @@
 		width: 70px;
 		margin-top: 14px;
 		margin-left: 9px;
+		position: relative;
+		top: -15px;
 	}
 	.cvvCodeField{
 		float:left;
@@ -125,6 +129,22 @@
         font-weight: normal;
 	}
 
+	.expiryDate {
+		position:relative;
+		top:-42px;
+	}
+
+	.inputField {
+		position:relative;
+		top:-85px;
+		padding-left: 12px;
+	}
+
+	#secondLine {
+		position:relative;
+		top:-35px;
+	}
+
 
 
 </style>
@@ -143,10 +163,10 @@
 			</div>
 		</div>
 		<div class="bottomDetails">
-			<hr class="lineSeparator">
+			<hr class="lineSeparator" id="secondLine">
 			<h2 class="expiryDate">Expiration date:<br></h2>
-			<div><input type="text" class="monthField" placeholder="Month" maxlength="2"></div>
-			<div><input type="text" class="yrField" placeholder="Year" maxlength="4"></div>
+			<div class="inputField"><input type="text" class="monthField" placeholder="Month" maxlength="2"></div>
+			<div class="inputField"><input type="text" class="yrField" placeholder="Year" maxlength="4"></div>
 			<div class="secure"><h2>Secure</h2><img src="Lock.jpg"/></div>
 		</div>
 	</div>
