@@ -127,6 +127,9 @@
 		-webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         font-weight: normal;
+		position: relative;
+		top: -65px;
+		right: -83px;
 	}
 
 	.expiryDate {
@@ -143,6 +146,16 @@
 	#secondLine {
 		position:relative;
 		top:-35px;
+	}
+
+	.image{
+		position: relative;
+		top: -100px;
+		right: -110px;
+	}
+
+	.secure {
+		
 	}
 
 
@@ -167,7 +180,7 @@
 			<h2 class="expiryDate">Expiration date:<br></h2>
 			<div class="inputField"><input type="text" class="monthField" placeholder="Month" maxlength="2"></div>
 			<div class="inputField"><input type="text" class="yrField" placeholder="Year" maxlength="4"></div>
-			<div class="secure"><h2>Secure</h2><img src="Lock.jpg"/></div>
+			<div class="secure"><h2>Secure</h2><img src="images/Lock.jpg" class="image"/></div>
 		</div>
 	</div>
 </body>
