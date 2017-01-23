@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Visa Card</title>
+
+<style>
+	.container{
+		background-color: #efefef;
+		width:343px;
+		height: 202px;
+		border-radius: 10px;
+	}
+	.title{
+		font-size: 20px;
+        font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;		color:#5b5b5b;
+		font-weight: normal;
+		-webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        padding-top: 28px;
+        padding-left: 15px;
+	}
+
+	.creditCardNo{
+		padding-top: 14px;
+		padding-left: 14px;
+		font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;		
+		color:#5b5b5b;
+		font-weight: normal;
+		font-size:11px;
+		float:left;
+		position: relative;
+		top: -15px;
+	}
+	.creditCardField{
+		margin-top: 6px;
+		border-radius: 5px;
+		width: 227px;
+		height: 30px;
+		font-size:18px;
+		text-indent: 8px;
+
+	}
+	.cvvCode{
+		float:left;
+		font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;		
+		color:#5b5b5b;
+		font-weight: normal;
+		font-size:11px;
+		width: 70px;
+		margin-top: 14px;
+		margin-left: 9px;
+		position: relative;
+		top: -15px;
+	}
+	.cvvCodeField{
+		float:left;
+		border-radius: 5px;
+		width: 70px;
+		height: 30px;
+		font-size:17px;
+		margin-top: 6px;
+		text-indent: 6px;
+	}
+
+	#cardDetails{
+		min-height: 90px;
+		
+	}
+
+	.lineSeparator{
+		margin-left: 10px;
+		width: 329px;
+		height: 1px;
+		opacity: 0.4;
+	}
+
+	.bottomDetails > .lineSeparator{
+
+	}
+
+	.expiryDate{
+		padding-bottom: 34px;
+		padding-left: 14px;
+		font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;		
+		color:#5b5b5b;
+		font-weight: normal;
+		font-size:11px;
+	}
+
+	.monthField{
+		float:left;
+		border-radius: 5px;
+		width: 70px;
+		height: 30px;
+		font-size:10px;
+		color: #d5d5d5;
+		margin-bottom: ;
+		font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+/*		margin-top: 6px;
+*/		text-indent: 10px;
+	}
+
+	.yrField{
+		float:left;
+		margin-bottom: ;
+		margin-left: 10px;
+		border-radius: 5px;
+		width: 70px;
+		height: 30px;
+		font-size:10px;
+		color: #d5d5d5;
+		font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+/*		margin-top: 6px;
+*/		text-indent: 10px;
+	}
+
+	.secure >img{
+		
+		padding-left: 9px;
+	}
+
+	.secure > h2{
+		font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+		color: #888888;
+		font-size: 9px;
+		-webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        font-weight: normal;
+		position: relative;
+		top: -65px;
+		right: -83px;
+	}
+
+	.expiryDate {
+		position:relative;
+		top:-57px;
+	}
+
+	.inputField {
+		position:relative;
+		top:-98px;
+		padding-left: 12px;
+	}
+
+	#secondLine {
+		position:relative;
+		top:-50px;
+		
+	}
+
+	.image{
+		position: relative;
+		top: -100px;
+		right: -110px;
+	}
+
+	.secure {
+		position:relative;
+        top:-17px;
+	}
+
+	.card {
+		position: relative;
+		top: -110px;
+		right: -127px;
+	}
+
+
+
+</style>
+
+</head>
+
+
+<body>
+	<div class="container">
+		<h2 class="title">Credit card</h2>
+		<hr class="lineSeparator">
+		<div id ="cardDetails">
+			<div class="creditCardNo">Credit card number:<br><input type="text" class="creditCardField" placeholder="XXXX-XXXX-XXXX-XXXX" maxlength="16">
+			<div class="card"><img src="images/cards.jpg"/></div>
+			</div>
+			<div class="cvvCode">CVV code: <input type="text" class="cvvCodeField" placeholder="XXX" maxlength="3">
+			</div>
+		</div>
+		<div class="bottomDetails">
+			<hr class="lineSeparator" id="secondLine">
+			<h2 class="expiryDate">Expiration date:<br></h2>
+			<div class="inputField"><input type="text" class="monthField" placeholder="Month" maxlength="2"></div>
+			<div class="inputField"><input type="text" class="yrField" placeholder="Year" maxlength="4"></div>
+			<div class="secure"><h2>Secure</h2><img src="images/Lock.jpg" class="image"/></div>
+		</div>
+	</div>
+</body>
+
+
+
+</html>
